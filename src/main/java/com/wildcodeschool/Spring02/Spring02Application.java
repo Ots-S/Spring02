@@ -37,10 +37,10 @@ public class Spring02Application {
         if (number == 13) {
 			return "number: " + number + " name : Jodie Whittaker";
 		}
-		if (number > 0 && number < 9) {
+	if (number > 0 && number < 9) {
 			throw new ResponseStatusException(HttpStatus.SEE_OTHER, "303 See Other.");
 		}
-		else {
+	else {
 			throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Impossible de récupérer l'incarnation " + number );
 		}
     }
